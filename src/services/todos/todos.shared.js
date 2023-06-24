@@ -1,6 +1,6 @@
 export const todoPath = 'todos'
 
-export const todoMethods = ['find', 'get', 'create', 'patch', 'remove']
+export const todoMethods = ['find', 'get', 'create', 'patch', 'remove','update']
 
 export const todoClient = (client) => {
   const connection = client.get('connection')

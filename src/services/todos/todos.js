@@ -37,7 +37,8 @@ export const todo = (app) => {
       get: [],
       create: [schemaHooks.validateData(todoDataValidator), schemaHooks.resolveData(todoDataResolver)],
       patch: [schemaHooks.validateData(todoPatchValidator), schemaHooks.resolveData(todoPatchResolver)],
-      remove: []
+      remove: [],
+      update: []
     },
     after: {
       all: []
