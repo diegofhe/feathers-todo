@@ -13,5 +13,26 @@
     "client": "sqlite3",
     "connection": "feathers-todo.sqlite",
     "useNullAsDefault": true
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "1PoySAStsW/ax26j7ryVr1LjIpib38hk",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
   }
 }
